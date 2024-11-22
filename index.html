@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird Clone</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #70c5ce;
-        }
-        canvas {
-            border: 2px solid #000;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="gameCanvas" width="320" height="480"></canvas>
+    <div class="background"></div>
+    <img class="bird" src="bird.png" alt="bird-img">
+    <div class="message">Press Enter To Start Game</div>
+    <div class="score">
+        <span class="score_title"></span>
+        <span class="score_val"></span>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
